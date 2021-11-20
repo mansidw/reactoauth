@@ -1,13 +1,13 @@
 import React from 'react'
 import { useGoogleAuth } from '../contexts/AuthContext';
-import { useNavigate } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import '../assets/css/login.css'
 import '../assets/css/tailwind.css'
 
 
 
 const Logout = () => {
-    const navigate = useNavigate()
+    const history = useHistory()
     const { signOut } = useGoogleAuth();
     return (
         <div className='App'>
